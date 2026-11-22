@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b18">
+    <title>AccentUp — Speak With Confidence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">Accent<span>Up.</span></a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#practice">Practice</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="#practice" class="nav-button">Get Started</a>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="tag">✦ YOUR PERSONAL ENGLISH COACH</div>
+
+            <h1>
+                Speak English.<br>
+                <span>Speak Confidently.</span>
+            </h1>
+
+            <p>
+                Practise speaking, improve your communication
+                and build confidence one sentence at a time.
+            </p>
+
+            <a href="#practice" class="main-button">
+                Start Practicing →
+            </a>
+
+            <div class="features">
+                <span>✓ Speaking exercises</span>
+                <span>✓ Three learning levels</span>
+                <span>✓ Personal progress</span>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="sound-icon">♫</div>
+            <h3>Your voice. Your progress.</h3>
+            <p>Every word is a step forward.</p>
+
+            <div class="wave">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="card-bottom">
+                <span>ACCENTUP COACH</span>
+                <span class="online">● READY</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="practice" id="practice">
+            <div class="section-tag">YOUR LEARNING SPACE</div>
+            <h2>Speaking Practice</h2>
+            <p>Listen to the sentence, then try saying it yourself.</p>
+
+            <div class="practice-card">
+
+                <div class="level">YOUR LESSON</div>
+
+                <label for="levelSelect">Choose your level</label>
+
+                <select id="levelSelect">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <div class="sentence-box">
+                    <div class="sentence-label">READ THIS SENTENCE</div>
+                    <h3 id="sentence">Hello! How are you today?</h3>
+                </div>
+
+                <div class="button-group">
+                    <button id="newSentence" class="secondary-button">
+                        ↻ New Sentence
+                    </button>
+
+                    <button id="exampleBtn" class="example-button">
+                        🔊 Listen to Example
+                    </button>
+                </div>
+
+                <button id="listenBtn" class="mic-button">
+                    🎤 Start Speaking
+                </button>
+
+                <div id="result" aria-live="polite">
+                    Your speaking result will appear here.
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dashboard" id="dashboard">
+            <div class="section-tag">YOUR ACHIEVEMENTS</div>
+            <h2>Your Dashboard</h2>
+            <p>Keep practising and watch your progress grow.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <h3 id="totalAttempts">0</h3>
+                    <p>Total Attempts</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <h3 id="averageScore">0%</h3>
+                    <p>Average Score</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3 id="bestScore">0%</h3>
+                    <p>Best Score</p>
+                </div>
+
+            </div>
+
+            <div class="history-card">
+                <div class="history-heading">
+                    <h3>Recent Practice</h3>
+                    <button id="clearHistory" class="clear-button">
+                        Clear History
+                    </button>
+                </div>
+
+                <div id="historyList">
+                    <p class="empty-history">
+                        Your practice history will appear here.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-tag">ABOUT ACCENTUP</div>
+            <h2>Learn. Speak. Improve.</h2>
+
+            <p>
+                AccentUp is a speaking practice website designed
+                to help English learners build confidence.
+                Practise at your own pace and track your progress.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">Accent<span>Up.</span></a>
+        <p>© 2026 AccentUp. Learn. Speak. Improve.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
